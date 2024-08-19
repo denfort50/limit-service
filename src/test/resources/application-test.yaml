@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql:15:///java_pro?TC_DAEMON=true
+    username: postgres
+    password: password
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level:
+    root: info
+    sql: debug

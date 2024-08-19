@@ -1,0 +1,16 @@
+### Снизить лимит на указанную сумму
+POST http://localhost:8080/limit-service/reduce
+Content-Type: application/json
+
+{
+  "id": 1,
+  "sum": 5000
+}
+
+### Изменить стандратное значение лимита
+POST http://localhost:8080/limit-service/default
+Content-Type: application/json
+
+{
+  "sum": 50000
+}
